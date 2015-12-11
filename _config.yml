@@ -1,0 +1,19 @@
+baseurl: ""
+destination: ../blog_infovizion/_site
+lsi:         false
+port: 4000
+markdown: kramdown
+encoding: utf-8
+permalink: /:year/:month/:title/
+hihlighter: none
+paginate: 3
+name: InfoVizion blog
+description: Blog about various aspects of QlikView development process 
+url: http://blog.infovizion.ru/
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_dir:    images/latex
+  png_url:    /images/latex
+gems:
+  - jekyll-paginate
