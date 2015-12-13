@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>inqlik.gitgub.io</title>
- <link href="http://inqlik.gitgub.io/atom.xml" rel="self"/>
- <link href="http://inqlik.gitgub.io/"/>
+ <title>blog.infovizion.ru</title>
+ <link href="http://blog.infovizion.ru/atom.xml" rel="self"/>
+ <link href="http://blog.infovizion.ru/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://inqlik.gitgub.io/</id>
+ <id>http://blog.infovizion.ru/</id>
  <author>
    <name>Vadim Tsushko</name>
  </author>
@@ -16,9 +16,9 @@ layout: nil
  {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://inqlik.gitgub.io{{ post.url }}"/>
+   <link href="http://blog.infovizion.ru{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://inqlik.gitgub.io{{ post.id }}</id>
+   <id>http://blog.infovizion.ru{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
