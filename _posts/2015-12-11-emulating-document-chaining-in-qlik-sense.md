@@ -12,11 +12,12 @@ The current version of Qlik Sense (2.0.1 beta) do not support document chaining 
 To make a sample I've created a couple of applications with identical models (with load scripts copied from QlikView Script editor's `Test script`).
 First application, AppChainingMain, would play the role of a master dashboard (nothing fancy, just one sheet with a Pie Chart and couple of list boxes to filter data)
 
-![AppChainingMain](/images/app-chaining-main.png)
+<img src="/images/app-chaining-main.png" alt="AppChainingMain" width="700">
 
 Second application, AppChainingDetail, is similarly basic in design and consist of one table with transactions details
 
-![AppChainingDetail](/images/app-chaining-detail.png)
+<img src="/images/app-chaining-detail.png" alt="AppChainingDetail" width="700">
+
 
 Our goal will be to add the drill-down feature from AppChainingMain into the AppChainingDetail with current selecitons transferred.
 
@@ -56,7 +57,8 @@ Next step is to actually add some control with that drill-down feature to AppCha
 
 So basically, we should find some extension wich is capable of opening dynamically formed URL. I've tried  [Sheet Navigation + Actions for Qlik Sense](http://branch.qlik.com/projects/showthread.php?647-Sheet-Navigation-Actions-for-Qlik-Sense) and it works well for me. So we create extension button with label "Open details", navigation action "Open website" and formula in Website URL same as in Text & image object before, but prepended by equal sign. Clik on newly added button and sheet from second application will be opened:
 
-![Drill down](/images/app-chaining-drilldown.png)
+<img src="/images/app-chaining-drilldown.png" alt="Drill down" width="700">
+
 
 Take a notice that though detail sheet has a filter panel, application panel is unavailable. So for example navigation to other sheets in detail app should be implemented by some other means - by same "Sheet Navigation + Actions" or some other extension (maybe drop-down menu extension could be utilized to implement navigation between sheets of both applications)
 
