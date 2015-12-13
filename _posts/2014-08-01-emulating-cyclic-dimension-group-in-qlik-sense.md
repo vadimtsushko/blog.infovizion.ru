@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "Emulating document chaining in Qlik Sense"
+title: "Emulating cyclic dimension group in Qlik Sense"
 time: '23:12'
 ---
 
